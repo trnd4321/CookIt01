@@ -13,4 +13,4 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Tomer_placeholder
-      run: echo "Hello world_2 " " NOW::$date +'%Y-%m-%d')"
+      run: echo "Hello world_4 " " NOW::$date +'%Y-%m-%d')"
