@@ -1,0 +1,16 @@
+name: Tomer Testings
+
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'branch name to test'
+        required: False
+
+jobs:
+  configure:
+    runs-on: [self-hosted]
+    steps:
+    - uses: actions/checkout@v1
+    - name: Tomer_placeholder
+      run: echo "Hello world " " NOW::$date +'%Y-%m-%d')"

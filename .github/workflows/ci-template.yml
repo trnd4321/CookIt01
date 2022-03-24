@@ -1,0 +1,12 @@
+name: Embedded CI
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-windows:
+    runs-on: [self-hosted, Windows, X64]
+    steps:
+    - uses: actions/checkout@v2
+    - name: Greet
+      run: echo "hello world!"
