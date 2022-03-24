@@ -8,8 +8,7 @@ on:
         required: False
 
 jobs:
-  configure:
-    runs-on: [self-hosted]
+  S1:
     steps:
     - uses: actions/checkout@v1
     - name: Tomer_placeholder
