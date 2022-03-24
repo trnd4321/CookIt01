@@ -13,4 +13,11 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Tomer_placeholder
-      run: echo "Hello world_4 " " NOW::$date +'%Y-%m-%d')"
+      run: echo "Hello world_7"
+    - name: Get Time
+      id: time
+      uses: nanzm/get-time-action@v1.1
+      with:
+        timeZone: 8
+        format: 'YYYY-MM-DD-HH-mm-ss'
+      run: echo $TIME
